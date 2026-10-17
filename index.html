@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Pay - Join Telegram</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(145deg, #190a27, #080811 75%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.landing-card {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 485px;
+    min-height: 844px;
+    padding: 25px 23px 35px;
+    text-align: center;
+    border: 1px solid #373044;
+    border-radius: 32px;
+    background: linear-gradient(160deg, #21102e 0%, #100d20 48%, #060811 100%);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.corner {
+    position: absolute;
+    width: 85px;
+    height: 2px;
+    background: #e000bc;
+    transform: rotate(-35deg);
+}
+
+.corner.top {
+    top: 25px;
+    left: -16px;
+}
+
+.corner.bottom {
+    bottom: 25px;
+    right: -16px;
+}
+
+.logo-circle {
+    width: 112px;
+    height: 112px;
+    padding: 5px;
+    margin: 0 auto 12px;
+    border-radius: 50%;
+    border: 3px solid #ed29d1;
+    box-shadow: 0 0 20px rgba(222, 28, 213, 0.25);
+    background: #29132f;
+}
+
+.logo-circle img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #fff, #f7d8fa);
+    font-size: 43px;
+}
+
+.brand {
+    font-size: clamp(30px, 7vw, 37px);
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #fff, #ff4ccf);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.join-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    width: 100%;
+    min-height: 66px;
+    margin: 0 auto 23px;
+    border-radius: 20px;
+    background: linear-gradient(100deg, #18b4f5, #1764f5);
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(19px, 5vw, 25px);
+    font-weight: 900;
+    box-shadow: 0 12px 28px rgba(0, 105, 255, 0.17);
+    transition: transform .2s, filter .2s;
+}
+
+.join-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.12);
+}
+
+.telegram-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    background: #fff;
+    color: #1674ef;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.subtitle {
+    font-size: clamp(22px, 5.6vw, 32px);
+    line-height: 1.2;
+    font-weight: 900;
+    margin: 20px 0 23px;
+}
+
+.points {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 33px;
+}
+
+.point {
+    min-height: 53px;
+    padding: 13px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    border: 1px solid #008e66;
+    border-radius: 18px;
+    background: rgba(9, 28, 30, 0.76);
+    font-size: clamp(14px, 3.8vw, 18px);
+    font-weight: 800;
+    line-height: 1.35;
+}
+
+.point-icon {
+    flex-shrink: 0;
+    font-size: 17px;
+}
+
+.join-btn.bottom-btn {
+    margin-bottom: 0;
+}
+
+@media (max-width: 380px) {
+    .landing-card {
+        padding: 23px 15px 28px;
+        min-height: auto;
+        border-radius: 25px;
+    }
+
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .join-btn {
+        min-height: 59px;
+        border-radius: 17px;
+    }
+
+    .points {
+        gap: 17px;
+    }
+
+    .point {
+        border-radius: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="landing-card">
+
+    <div class="corner top"></div>
+    <div class="corner bottom"></div>
+
+    <!-- Logo -->
+    <div class="logo-circle">
+        <!-- Add your logo image as logo.png in this folder -->
+        <img src="logo.png"
+             alt="Logo"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+        <div class="logo-placeholder" style="display:none;">💳</div>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="brand">Google Pay</h1>
+
+    <!-- First Telegram Button -->
+    <a class="join-btn"
+       href="https://t.me/+gYE3YqASL8I0MTM1"
+       target="_blank"
+       rel="noopener noreferrer">
+        <span class="telegram-icon">➤</span>
+        <span>JOIN TELEGRAM</span>
+    </a>
+
+    <h2 class="subtitle">JOIN FREE TELEGRAM</h2>
+
+    <!-- Features -->
+    <div class="points">
+
+        <div class="point">
+            <span class="point-icon">⚡</span>
+            <span>Fast &amp; convenient digital payment</span>
+        </div>
+
+        <div class="point">
+            <span class="point-icon">🛡️</span>
+            <span>Secure payment practices</span>
+        </div>
+
+        <div class="point">
+            <span class="point-icon">🏬</span>
+            <span>Business payment setup</span>
+        </div>
+
+        <div class="point">
+            <span class="point-icon">🤝</span>
+            <span>Business payment support</span>
+        </div>
+
+    </div>
+
+    <!-- Second Telegram Button -->
+    <a class="join-btn bottom-btn"
+       href="https://t.me/+gYE3YqASL8I0MTM1"
+       target="_blank"
+       rel="noopener noreferrer">
+        <span class="telegram-icon">➤</span>
+        <span>JOIN TELEGRAM</span>
+    </a>
+
+</div>
+
+</body>
+</html>
